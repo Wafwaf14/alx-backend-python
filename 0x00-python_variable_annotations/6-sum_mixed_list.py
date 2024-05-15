@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""
-Complex typess - mixedd list
-"""
+"""Complex types - mixed list"""
+from functools import reduce
 from typing import List, Union
 
 
-def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
-    """returns sufm of mixed list as a float"""
-    return sum(mxd_lst)
+def sum_mixed_list(mxd_list: List[Union[int, float]]) -> float:
+    """Takes a mixed list
+    Returns their sum"""
+    return reduce(lambda x, y: x + y, mxd_list)

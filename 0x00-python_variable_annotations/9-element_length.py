@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-"""
-Let's duckk type ann iterable object
-"""
-from typing import Iterable, List, Tuple, Sequence
+""" Let's duck type an iterable object"""
+from typing import Iterable, Sequence, List, Tuple
 
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
-    """I it walks likeaa a duck and it quacks like a duck
-    then it must be a duck"""
+    """Takes an iterable
+    Returns a list"""
     return [(i, len(i)) for i in lst]

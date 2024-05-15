@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
-"""
-Basic annotation add
-"""
+"""Basic annotations - add"""
 
 
 def add(a: float, b: float) -> float:
-    """takes float and float b as arguments
-    ad returns their sum as float"""
+    """Takes two float numbers
+    returns a float"""
     return a + b

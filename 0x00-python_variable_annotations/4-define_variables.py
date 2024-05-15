@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-"""
-definez and annoate variables
-"""
+""" Define variables"""
 
 
 a: int = 1
